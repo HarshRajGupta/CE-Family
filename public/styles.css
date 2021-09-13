@@ -1,0 +1,207 @@
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  min-width: 400px;
+  background-color: #08d9d6;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  left: -1%;
+  height: 10vh;
+  width: 101vw;
+  z-index: 1;
+  justify-content: space-around;
+  background: linear-gradient(to left, #383a3d, #222831, #252a34);
+  color: #eaeaea;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  overflow: hidden;
+}
+
+.navbar img {
+  /* -+-+-+-Logo-+-+-+- */
+  height: 8vh;
+  margin-left: 10%;
+  margin-top: 1vh;
+}
+
+.nav-items {
+  /* -+-+-+-Navigation Links-+-+-+- */
+  position: absolute;
+  right: 20vw;
+  width: 60%;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  font-size: 2.5vh;
+  margin-top: 3.5vh;
+  text-align: center;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: inherit;
+  position: static;
+}
+
+.nav-items a:hover {
+  color: #ff2e63;
+  font-weight: 500;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4em;
+  font-family: BATIK WORLDWIDE_PERSONAL USE;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #2d3436;
+  margin: 15vh 0 30px;
+}
+
+.card {
+  border-radius: 25px;
+  position: relative;
+  padding: 25px 15px;
+  background-color: #252a34;
+  margin: 50px 0;
+  height: 200px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: left;
+  box-shadow: rgba(175, 41, 41, 0.4) 0px 2px 4px,
+    rgba(197, 61, 61, 0.3) 0px 7px 13px -3px,
+    rgba(126, 34, 34, 0.2) 0px -3px 0px inset;
+}
+
+.top {
+  border-radius: 25px 25px 0 0;
+  height: 100px;
+  width: 100%;
+  background-color: #252a34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.name {
+  font-size: 2em;
+  color: #ff2e63;
+  display: flex;
+  flex: 1;
+  margin: 20px 20px 0;
+}
+
+.card img {
+  margin: 30px 0 0 0;
+  overflow: hidden;
+}
+
+.circle-img {
+  /* border-radius: 0%; */
+  /* border: 7px solid #fff; */
+  /* width: 120px; */
+  height: 200px;
+}
+
+.bottom {
+  margin-top: 110px;
+}
+
+.info {
+  margin: 10px 0;
+  color: #eaeaea;
+}
+
+.links img {
+  width: 50px;
+  /* margin-top: 1px; */
+  margin: 1px 5px;
+}
+.links img:hover {
+  transform: scale(1.25);
+  transition: 1s;
+}
+.links .in img {
+  width: 40px;
+  margin-top: 10px;
+}
+.links {
+  display: flex;
+  width: 100px;
+  /* overflow: hidden; */
+}
+
+/* -+-+-+-+-+-+-+-+-+-+-Footer -+-+-+-+-+-+-+-+-+-+-*/
+
+.footer-p {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  height: max-content;
+  background: linear-gradient(to right, #383a3d, #222831, #252a34);
+  margin-top: 7rem;
+  color: #eaeaea;
+  width: 100vw;
+  margin-left: -35vw;
+  justify-content: space-around;
+  overflow: hidden;
+  margin-bottom: -5vh;
+}
+
+.footer-p .about-us {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  text-align: center;
+}
+
+.footer-p .quick-links {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  text-align: center;
+}
+
+.footer-p .quick-links span:hover {
+  color: #ff2e63;
+}
+
+.footer-p .follow {
+  width: 80%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.footer-p .follow .f-c-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.1px;
+}
+
+.footer-p a img {
+  transition: all 0.3s linear;
+}
+
+.footer-p a:hover img {
+  transform: scale(1.5);
+}
+
+.footer-p .f-c-5 {
+  margin-top: 10px;
+}
+
+.footer-p a {
+  color: inherit;
+  text-decoration: inherit;
+}
