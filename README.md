@@ -37,3 +37,13 @@ Student List
 >> It is not responsive yet.
 
 >>  In this we learnt about many properties and methods and have tried to implement it as much as possible.
+
+Notice Board
+
+![notice board1](https://user-images.githubusercontent.com/77490864/133099685-96cf4e50-91a0-462a-b2ed-81f275e8539a.jpeg)
+
+>> We have used HTML and CSS to create this page .
+
+>>  It is yet to be made responsive.
+
+>> Have used linear gradient and webkit for some box shadow effects.  
