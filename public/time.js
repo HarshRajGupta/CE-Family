@@ -7,6 +7,9 @@ if (cur_day > 0 && cur_day < 6) {
         if ((cur_hour > 9 && cur_min > 4) || ((cur_hour > 10 && cur_min < 5))) {
             document.getElementsByClassName("cls-1").style.color = "#355C7D";
             document.getElementsByClassName("cls-1").style.background = "#F67280";
+            document.getElementById("cls-1").onclick = function () {
+                location.href = "https://meet.google.com/lookup/dzfkh3p367?authuser=0&hs=179";
+            };
         }
         else if ((cur_hour > 10 && cur_min > 9) || ((cur_hour > 11 && cur_min < 10))) {
             document.getElementsByClassName("cls-6").style.color = "#355C7D";
@@ -53,6 +56,9 @@ if (cur_day > 0 && cur_day < 6) {
         if ((cur_hour > 9 && cur_min > 4) || ((cur_hour > 10 && cur_min < 5))) {
             document.getElementsByClassName("cls-3").style.color = "#355C7D";
             document.getElementsByClassName("cls-3").style.background = "#F67280";
+            document.getElementById("cls-3").onclick = function () {
+                location.href = "https://meet.google.com/lookup/dzfkh3p367?authuser=0&hs=179";
+            };
         }
         else if ((cur_hour > 10 && cur_min > 9) || ((cur_hour > 11 && cur_min < 10))) {
             document.getElementsByClassName("cls-8").style.color = "#355C7D";
@@ -87,7 +93,9 @@ if (cur_day > 0 && cur_day < 6) {
         else if ((cur_hour > 11 && cur_min > 14) || ((cur_hour > 12 && cur_min < 15))) {
             document.getElementsByClassName("cls-13").style.color = "#355C7D";
             document.getElementsByClassName("cls-13").style.background = "#F67280";
-        }
+        } document.getElementById("cls-13").onclick = function () {
+            location.href = "https://meet.google.com/lookup/dzfkh3p367?authuser=0&hs=179";
+        };
 
     }
     else if (cur_day === 5) {
