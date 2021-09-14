@@ -47,3 +47,31 @@ Notice Board
 >>  It is yet to be made responsive.
 
 >> Have used linear gradient and webkit for some box shadow effects.  
+
+
+DAY - 3
+
+Snapshots
+
+We have made 3 forms and 2 pages (namely success and error). 
+#Login Page
+
+![Web capture_14-9-2021_231550_127 0 0 1](https://user-images.githubusercontent.com/77490864/133307770-b436518a-a345-4fe5-b5ff-67fc25390acb.jpeg)
+
+>> We have added some animations using CSS.
+
+#Registration Page
+
+![Web capture_14-9-2021_231242_cranky-blackwell-89b44a netlify app](https://user-images.githubusercontent.com/77490864/133308316-1befb5e4-44c6-4dc4-813f-5bfc718a5d65.jpeg)
+
+#Update Info
+
+![Web capture_14-9-2021_23132_cranky-blackwell-89b44a netlify app](https://user-images.githubusercontent.com/77490864/133308498-8dee003e-c9a9-4750-82dd-da9c01e19ef8.jpeg)
+
+#Success page
+
+![Web capture_14-9-2021_231438_127 0 0 1](https://user-images.githubusercontent.com/77490864/133308529-1962c428-5307-4e77-bfd7-b614159cc4f9.jpeg)
+
+#Error page
+
+![Web capture_14-9-2021_23145_127 0 0 1](https://user-images.githubusercontent.com/77490864/133308590-77699525-f3a9-4d2b-81e1-4e301689ab2a.jpeg)
