@@ -75,3 +75,7 @@ We have made 3 forms and 2 pages (namely success and error).
 #Error page
 
 ![Web capture_14-9-2021_23145_127 0 0 1](https://user-images.githubusercontent.com/77490864/133308590-77699525-f3a9-4d2b-81e1-4e301689ab2a.jpeg)
+
+Improvements in previously done pages  : Used grid layout in the student list page.
+
+![Web capture_14-9-2021_232535_cranky-blackwell-89b44a netlify app](https://user-images.githubusercontent.com/77490864/133309122-2be160f5-ed45-41e5-a573-19ec70d25d3d.jpeg)
