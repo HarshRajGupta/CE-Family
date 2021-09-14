@@ -54,6 +54,7 @@ DAY - 3
 Snapshots
 
 We have made 3 forms and 2 pages (namely success and error). 
+>> Login , Registration and Updating forms links are linked in footer .
 #Login Page
 
 ![Web capture_14-9-2021_231550_127 0 0 1](https://user-images.githubusercontent.com/77490864/133307770-b436518a-a345-4fe5-b5ff-67fc25390acb.jpeg)
