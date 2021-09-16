@@ -52,7 +52,7 @@ app.post("/", function(req, res) {
     }
 });
 
-var port = process.env.port || 2202;
+var port = process.env.PORT || 2202;
 app.listen(port, function() {
     console.log("Listening to ${port}")
 });
