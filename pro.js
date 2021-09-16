@@ -15,6 +15,7 @@ app.get("/forgotPassword", function(req, res) {
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/login.html");
 });
+
 app.post("/forgotPassword",function(req, res){
     res.send("We will contact you as soon as possible")
 });
@@ -51,11 +52,7 @@ app.post("/", function(req, res) {
     }
 });
 
-app.get("#", function(req, res) 
-{
-    res.sendFile(__dirname + "/loading.html")
-})
-
-app.listen(7007, function() {
-    console.log("Server is running on port 7007")
+var port = process.env.port || 2202;
+app.listen(port, function() {
+    console.log("Listening to ${port}")
 });
