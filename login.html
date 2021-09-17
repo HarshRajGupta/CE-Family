@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style>
+      html,
+      body {
+        /* width: 100vw; */
+        font-family: cursive;
+        background-color: #08d9d6;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        
+      }
+      html {
+        display: inline;
+      }
+      /* -+-+-+-+-+-+-+-+-+-+-Nav Bar -+-+-+-+-+-+-+-+-+-+-*/
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+      :root {
+        --c: #ff2e63;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .login-pg button {
+        background: none;
+        border: none;
+        height: 50px;
+        width: 80%;
+        position: relative;
+        display: inline-block;
+        padding: 3px 10px;
+        font-size: 20px;
+        color: var(--c);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 3px;
+        overflow: hidden;
+      }
+      .login-pg button:hover {
+        background: var(--c);
+        color: #050801;
+        box-shadow: 0 0 5px var(--c), 0 0 25px var(--c), 0 0 50px var(--c),
+          0 0 200px var(--c);
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+      }
+      .login-pg button:nth-child(1) {
+        --c: #ff2e63;
+      }
+      .login-pg button span {
+        position: absolute;
+        display: block;
+      }
+      .login-pg button span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--c));
+        animation: animate1 1s linear infinite;
+      }
+      @keyframes animate1 {
+        0% {
+          left: -100%;
+        }
+        50%,
+        100% {
+          left: 100%;
+        }
+      }
+      .login-pg button span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, var(--c));
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+  
+      }
+      @keyframes animate2 {
+        0% {
+          top: -100%;
+        }
+        50%,
+        100% {
+          top: 100%;
+        }
+      }
+      .login-pg button span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, var(--c));
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+      @keyframes animate3 {
+        0% {
+          right: -100%;
+        }
+        50%,
+        100% {
+          right: 100%;
+        }
+      }
+
+      .login-pg button span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, var(--c));
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+      @keyframes animate4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,
+        100% {
+          bottom: 100%;
+        }
+      }
+
+      .login-pg {
+        margin: 5vh auto;
+        background: #141929;
+        border-radius: 25px;
+        display: grid;
+        text-align: center;
+        grid-gap: 1rem;
+        padding: 2rem;
+        width: 350px;
+        height: max-content;
+       vertical-align: middle;
+      }
+      .box {
+        display: grid;
+        padding: 2rem;
+        border: 2px solid #ff2e63;
+        border-radius: 20px;
+        color: #ff2e63;
+        font-size: 30px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        letter-spacing: 2px;
+      }
+      form {
+        height: max-content;
+      }
+      form label {
+        color: #eaeaea;
+        font-size: 20px;
+      }
+      .box a {
+        margin-top: 1rem;
+        font-size: 14px;
+        color: #08d9d6;
+      }
+      .box input {
+        width: 18vw;
+        height: 27px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 0;
+      }
+      .box img {
+        margin: 2rem auto;
+      }
+     
+    </style>
+    <title>CE || Login page</title>
+    <link
+      rel="icon"
+      href="https://user-images.githubusercontent.com/85221003/133185970-6a6edf5b-9020-496e-aea8-4ec464135855.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    
+    <div class="login-pg">
+      <div class="box">
+        LOGIN
+        <img
+          src="https://user-images.githubusercontent.com/77490864/133266102-cbf72eee-4807-465a-810c-5887f0028dca.png"
+          alt=""
+        />
+
+        <form method="POST">
+          <label for="username">Username<span style="color: red;">*</span></label><br />
+          <input
+            type="username"
+            id="username"
+            name="username"
+            placeholder="Nickname"
+            required
+          /><br /><br />
+          <label for="password">Password<span style="color: red;">*</span></label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          /><br>
+          <a href="/forgotPassword">Forgot Password</a><br /><br>
+          <button value="login" name="button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            LOGIN
+        </button>
+        </form>        
+      </div>
+    </div>
+   
+  </body>
+</html>
