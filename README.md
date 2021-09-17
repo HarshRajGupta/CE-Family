@@ -80,3 +80,13 @@ We have made 3 forms and 2 pages (namely success and error).
 Improvements in previously done pages  : Used grid layout in the student list page.
 
 ![Web capture_14-9-2021_232535_cranky-blackwell-89b44a netlify app](https://user-images.githubusercontent.com/77490864/133309122-2be160f5-ed45-41e5-a573-19ec70d25d3d.jpeg)
+
+
+DAY - 6
+
+Made the main page for directing to the login page . 
+
+![Web capture_17-9-2021_23426_127 0 0 1](https://user-images.githubusercontent.com/77490864/133836507-aa0166df-cfe9-4114-9c6e-67cc358f59ae.jpeg)
+
+Some animations made using CSS
+
