@@ -30,6 +30,7 @@ const User = mongoose.model("User", userSchema);
 const key = "CE-Family";
 
 var _username = "";
+var _uid = "";
 
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/home.html");
@@ -39,6 +40,8 @@ app.get("/login", function(req, res) {
     if (req.cookies["Login Key"] === key) {
         res.redirect("/home");
     } else {
+        res.clearCookie("Login Key");
+        res.clearCookie("uid");
         res.render("login", { typ: "username" });
     }
 });
@@ -54,13 +57,13 @@ app.post("/login", function(req, res) {
         }
     } else if (req.body.button === "password") {
 
-        User.findOne({ username: _username }, function(err, uid) {
+        User.findOne({ username: _username }, function(err, userdata) {
             if (err) {
                 console.log(err);
             } else {
-                res.cookie("uid", uid);
-                if (req.body.password === psd.password) {
-                    console.log(uid);
+                if (req.body.password === userdata.password) {
+                    res.cookie("uid", userdata);
+                    console.log(userdata);
                     res.cookie("Login Key", "CE-Family");
                     username = "";
                     res.redirect("/home");
@@ -80,6 +83,8 @@ app.get("/register", function(req, res) {
     if (req.cookies["Login Key"] === key) {
         res.redirect("/home");
     } else {
+        res.clearCookie("Login Key");
+        res.clearCookie("uid");
         res.render("register");
     }
 });
@@ -136,8 +141,29 @@ app.get("/notice", function(req, res) {
     }
 });
 
+app.get("/edit-notice", function(req, res) {
+    if (req.cookies["Login Key"] === key) {
+        _uid = req.cookies["uid"];
+        if (_uid.username === "b520051" || _uid.username === "b520015") {
+            res.sendFile(__dirname + "/edit.html");
+        } else {
+            res.redirect("notice");
+        }
+    } else {
+        console.log("Login to See details");
+        res.redirect("/login");
+    }
+});
+
+app.post("/edit-notice", function(req, res) {
+    noticeHeading.push(req.body.hd)
+    noticeBody.push(req.body.bd)
+    res.redirect("notice");
+})
+
 app.get("/logout", function(req, res) {
     res.clearCookie("Login Key");
+    res.clearCookie("uid");
     res.render("logout");
 });
 
