@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style>
+        html,
+body {
+  /* width: 100vw; */
+  font-family: cursive;
+  background-color: #08d9d6;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+/* -+-+-+-+-+-+-+-+-+-+-Nav Bar -+-+-+-+-+-+-+-+-+-+-*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+    :root {
+        --c: #03e9f4;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .nav-bar {
+        width: 100vw;
+        height: max-content;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        background: linear-gradient(to left, #383a3d, #222831, #252a34);
+        color: #eaeaea;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .nav-bar img {
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .nav-bar .form {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 0.8fr 1fr 1fr 1fr 1fr 0.2fr 1fr 0.2fr;
+    }
+
+    .nav-bar a,
+    .ql  {
+        background: none;
+        border: none;
+        height: 30px;
+        width: 60%;
+        position: relative;
+        font-size: 10px;
+        color: var(--c);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 2px;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .nav-bar a:hover,
+    .ql a:hover {
+        background: var(--c);
+        color: #050801;
+        box-shadow: 0 0 5px var(--c), 0 0 25px var(--c), 0 0 50px var(--c),
+            0 0 200px var(--c);
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
+
+    .nav-bar a:nth-child(1),
+    .contact-l {
+        --c: #0ba8e6;
+    }
+
+    .nav-bar a:nth-child(2),
+    .home-l {
+        --c: #a8e6cf;
+    }
+
+    .nav-bar a:nth-child(3) {
+        --c: #fdffab;
+    }
+
+    .nav-bar a:nth-child(4) {
+        --c: #ffd3b6;
+    }
+
+    .nav-bar a:nth-child(5) {
+        --c: #ffaaa5;
+    }
+
+    .nav-bar a span,
+    .ql a span {
+        position: absolute;
+        display: block;
+    }
+
+    .nav-bar a span:nth-child(1),
+    .ql a span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--c));
+        animation: animate1 1s linear infinite;
+    }
+
+    @keyframes animate1 {
+        0% {
+            left: -100%;
+        }
+
+        50%,
+        100% {
+            left: 100%;
+        }
+    }
+
+    .nav-bar a span:nth-child(2),
+    .ql a span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, var(--c));
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+    }
+
+    @keyframes animate2 {
+        0% {
+            top: -100%;
+        }
+        50%,
+        100% {
+            top: 100%;
+        }
+    }
+
+    .nav-bar a span:nth-child(3),
+    .ql a span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, var(--c));
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate3 {
+        0% {
+            right: -100%;
+        }
+
+        50%,
+        100% {
+            right: 100%;
+        }
+    }
+
+    .ql a {
+        height: 25px;
+        width: 60%;
+    }
+
+    .nav-bar a span:nth-child(4),
+    .ql a span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, var(--c));
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+    }
+
+    @keyframes animate4 {
+        0% {
+            bottom: -100%;
+        }
+
+        50%,
+        100% {
+            bottom: 100%;
+        }
+    }
+input [type="file"]{
+    content: "Photo";
+   margin-left: 4rem;
+}
+/* .navbar a {
+  color: inherit;
+  text-decoration: inherit;
+  position: static;
+}
+
+.nav-items a:hover {
+  color: #ff2e63;
+  font-weight: 500;
+} */
+.login-pg {
+  margin: 20vh auto;
+  background: #141929;
+  border-radius: 25px;
+  display: grid;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 2rem;
+  width: calc(2*350px);
+  height: max-content;
+  margin-bottom: 40vh;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box {
+  display: grid;
+  padding: 3rem;
+  border: 2px solid #ff2e63;
+  border-radius: 20px;
+  color: #ff2e63;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
+}
+.form-p {
+  height: max-content;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  grid-gap: 4rem;
+  margin-top: 3rem;
+  margin: 2rem auto;
+}
+.form-p label,.upload label {
+  color: #eaeaea;
+  font-size: 18px;
+}
+
+
+.box input:focus{
+    color: #ff2e63;
+}
+textarea{
+    resize: vertical;
+    min-height: 150px;
+    width: 550px;
+    border-radius: 12px;
+    margin: 1rem auto;
+}
+.box input {
+  width: 210px;
+  height: 27px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+.box img {
+  margin: 2rem auto;
+  width: 150px;
+  animation: rotate 10s linear infinite;
+}
+.button span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0;
+  perspective: 1000px;
+  text-align: center;
+}
+.useless{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.button span button {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  border: none;
+}
+.button span button:before,
+.button span button:after {
+  position: absolute;
+  content: "SUBMIT";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.button span button:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button span button:after {
+  color: #000;
+  background: #ff2e63;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button span button:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+/* -+-+-+-+-+-+-+-+-+-+-Footer -+-+-+-+-+-+-+-+-+-+-*/
+
+.footer-p {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  height: max-content;
+  background: linear-gradient(to right, #383a3d, #222831, #252a34);
+  margin-top: 7rem;
+  color: #eaeaea;
+  width: 100%;
+  justify-content: space-around;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+.footer-p .about-us {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  text-align: center;
+}
+
+.footer-p .quick-links {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  text-align: center;
+
+}
+
+.footer-p .quick-links span:hover {
+  color: #ff2e63;
+}
+
+.footer-p .follow {
+  width: 80%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.footer-p .follow .f-c-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.1px;
+}
+
+.footer-p a img {
+  transition: all 0.3s linear;
+}
+
+.footer-p a:hover img {
+  transform: scale(1.5);
+}
+
+.footer-p .f-c-5 {
+  margin-top: 10px;
+}
+
+.footer-p a {
+  color: inherit;
+  text-decoration: inherit;
+}
+@media (max-width:900px){
+    
+  .footer-p{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      align-items:baseline;
+  }
+  .f-c-5 a{
+      font-size: 13px;
+      height: 20px;
+      width: 40px;
+      padding: 0.5rem;
+  }
+  
+  .f-c-1,.f-c-4,.f-c-2,.f-c-5,.f-c-3,.f-c-6{
+      margin-left: 20vw;
+      margin-right: 7vw;
+  }
+  .nav-bar a{
+    font-size: 9px;
+  }
+  
+}
+@media (max-width:500px)
+{
+  .nav-bar a{
+    font-size: 4px;
+    height: 20px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 700px) {
+  .navbar {
+    height: 9vh;
+  }
+  .navbar img {
+    height: 7vh;
+    margin: 1vh 10%;
+  }
+  .nav-items {
+    font-size: 1.5vw;
+  }
+} 
+
+    </style>
+    <title>Notice Board</title>
+    <link rel="icon" href="https://user-images.githubusercontent.com/85221003/133185970-6a6edf5b-9020-496e-aea8-4ec464135855.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="form">
+            <img src="https://user-images.githubusercontent.com/77490864/133586831-899fc6c3-b507-4434-8496-525b638975cb.png" alt="" />
+            <a href="home">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                HOME
+            </a>
+            <a href="time-table">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Time Table
+            </a>
+            <a href="notice">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                NOTICE
+            </a>
+            <a href="friends">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Friends
+            </a>
+            <div class="useless"></div>
+            <a href="logout">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Logout
+            </a>
+        </div>
+    </div>
+    <div class="login-pg">
+        <div class="box">
+            Edit Notice Board
+            <form method="POST" action="edit-notice">
+                <div class="form-p">
+                    <div class="subbox">
+                        <label for="hd">SUBJECT</label>
+                        <input type="hd" id="hd" name="hd" placeholder="Subject" required />
+                    </div>
+                    <div class="subbox">
+                        <label for="photo">Upload picture</label>
+                        <input type="file" />
+                    </div>
+                </div>
+                <div>
+                    <label for="bd">BODY</label>
+                    <textarea id="bd" name="bd" placeholder="Description" required >
+                    </textarea>
+                </div>
+                <div class="button">
+                    <span>
+                        <button value="notice" name="button">
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-p">
+        <div class="about-us">
+            <div class="f-c-1">
+                <h3>About us</h3>
+            </div>
+            <div class="f-c-4">
+                Computer Engineering<br />
+                Happy memories are hiding palces for unforgotten Treasures
+            </div>
+        </div>
+        <div class="quick-links">
+            <div class="f-c-2">
+                <h3>Quick links</h3>
+            </div>
+            <div class="f-c-5">
+                <div class="home-l ql">
+                    <a href="https://www.iiit-bh.ac.in/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        IIIT BBSR</a>
+                </div>
+                <br>
+                <div class="contact-l ql">
+                    <a href="https://hib.iiit-bh.ac.in/m-ums-2.0/start/login/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        MUMS 2.0</a>
+                </div>
+            </div>
+        </div>
+        <div class="follow">
+            <div class="f-c-3">
+                <h3>Follow us</h3>
+            </div>
+            <div class="f-c-6">
+                <div class="fb-l">
+                    <a href="https://www.facebook.com/">
+                        <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+                    </a>
+                </div>
+                <div class="twitter-l">
+                    <a href="https://www.twitter.com/">
+                        <img src="https://img.icons8.com/color/48/000000/twitter-circled--v5.png" />
+                    </a>
+                </div>
+                <div class="google-l">
+                    <a href="#">
+                        <img src="https://img.icons8.com/color-glass/48/000000/google-logo.png" />
+                    </a>
+                </div>
+                <div class="insta-l">
+                    <a href="https://www.instagram.com/">
+                        <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
