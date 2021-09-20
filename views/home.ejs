@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CE || Home Page</title>
+    <style>
+    html,
+    body {
+        font-family: cursive;
+        background-color: #08d9d6;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* -+-+-+-+-+-+-+-+-+-+-KeyFrames -+-+-+-+-+-+-+-+-+-+-*/
+
+    @keyframes to-right {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes to-left {
+        0% {
+            transform: translateX(50%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes to-top {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    html {
+        display: inline;
+    }
+
+    /* -+-+-+-+-+-+-+-+-+-+-Front Page-+-+-+-+-+-+-+-+-+-+-*/
+
+    .container {
+        margin-left: -1vw;
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+
+    .front-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+    }
+
+    /* -+-+-+-+-+-+-+-+-+-+-Image-+-+-+-+-+-+-+-+-+-+-*/
+
+    .img {
+        width: 80%;
+        height: max-content;
+        padding: 0;
+        margin-top: 13vh;
+        margin-right: 5vw;
+        animation: to-left 0.75s linear 1;
+        align-self: last-baseline;
+    }
+
+    .img img {
+        width: 80%;
+        height: 81vh;
+        border-radius: 5%;
+        margin: 0 5vw;
+    }
+
+    /* -+-+-+-+-+-+-+-+-+-+-Calander -+-+-+-+-+-+-+-+-+-+-*/
+
+    .dark {
+        /* -+-+-+-Parent Class-+-+-+- */
+        width: 65%;
+        height: max-content;
+        display: grid;
+        grid-gap: 1.8vh;
+        animation: to-right 0.75s linear 1;
+        justify-content: space-around;
+        align-self: center;
+        margin-top: 13vh;
+        margin-left: 9vw;
+        padding-left: 15px;
+
+    }
+
+    .calendar {
+        align-self: center;
+        height: 62vh;
+        width: 100%;
+        background-color: #141529;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .calendar-header {
+        /* -+-+-+-Month, Year-+-+-+- */
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 600;
+        color: #f8fbff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .calendar-body {
+        padding: 10px;
+    }
+
+    .calendar-week-day {
+        height: 5vh;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        font-weight: 600;
+    }
+
+    .calendar-week-day div {
+        display: grid;
+        place-items: center;
+        color: #79788c;
+    }
+
+    .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1.8px;
+        color: #f8fbff;
+    }
+
+    .calendar-days div {
+        width: 9%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+        animation: to-top 1s forwards;
+    }
+
+    .calendar-days div:hover span {
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+        position: absolute;
+    }
+
+    .calendar-days div span:nth-child(1),
+    .calendar-days div span:nth-child(3) {
+        width: 2px;
+        height: 0;
+        background-color: #f8fbff;
+    }
+
+    .calendar-days div:hover span:nth-child(1),
+    .calendar-days div:hover span:nth-child(3) {
+        height: 100%;
+    }
+
+    .calendar-days div span:nth-child(1) {
+        bottom: 0;
+        left: 0;
+    }
+
+    .calendar-days div span:nth-child(3) {
+        top: 0;
+        right: 0;
+    }
+
+    .calendar-days div span:nth-child(2),
+    .calendar-days div span:nth-child(4) {
+        width: 0;
+        height: 1.8px;
+        background-color: #f8fbff;
+    }
+
+    .calendar-days div:hover span:nth-child(2),
+    .calendar-days div:hover span:nth-child(4) {
+        width: 100%;
+    }
+
+    .calendar-days div span:nth-child(2) {
+        top: 0;
+        left: 0;
+    }
+
+    .calendar-days div span:nth-child(4) {
+        bottom: 0;
+        right: 0;
+    }
+
+    .calendar-days div:hover span:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .calendar-days div:hover span:nth-child(3) {
+        transition-delay: 0.4s;
+    }
+
+    .calendar-days div:hover span:nth-child(4) {
+        transition-delay: 0.6s;
+    }
+
+    .calendar-days div.curr-date,
+    .calendar-days div.curr-date:hover {
+        background-color: #0000ff;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .calendar-days div.curr-date span {
+        display: none;
+    }
+
+    .month-picker {
+        padding: 4.5px 9px;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+
+    .month-picker:hover {
+        background-color: #323048;
+    }
+
+    .year-picker {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        align-items: center;
+    }
+
+    .year-change {
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin: 0 9px;
+        cursor: pointer;
+    }
+
+    .year-change:hover {
+        background-color: #323048;
+    }
+
+    .calendar-footer {
+        padding: 9px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .toggle {
+        display: flex;
+    }
+
+    .month-list {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #141529;
+        padding: 18px;
+        grid-template-columns: repeat(3, auto);
+        gap: 4.5px;
+        display: grid;
+        transform: scale(1.5);
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .month-list.show {
+        transform: scale(1);
+        visibility: visible;
+        pointer-events: visible;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .month-list>div {
+        display: grid;
+        place-items: center;
+    }
+
+    .month-list>div>div {
+        width: 100%;
+        padding: 4.5px 18px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #f8fbff;
+    }
+
+    .month-list>div>div:hover {
+        background-color: #323048;
+    }
+
+    /* -+-+-+-+-+-+-+-+-+-+-Class Joining Button -+-+-+-+-+-+-+-+-+-+-*/
+
+    #current-class {
+        background: none;
+        border: none;
+        height: 50px;
+        width: 80%;
+        position: relative;
+        display: inline-block;
+        padding: 3px 10px;
+        font-size: 20px;
+        color: var(--c);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 3px;
+        overflow: hidden;
+    }
+
+    #current-class:hover {
+        background: var(--c);
+        color: #050801;
+        box-shadow: 0 0 5px var(--c), 0 0 25px var(--c), 0 0 50px var(--c),
+            0 0 200px var(--c);
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        cursor: pointer;
+    }
+
+    #current-class {
+        width: 50%;
+        border-radius: 10px;
+        background: black;
+        text-align: center;
+        margin: 0 auto;
+        --c: #ff2e63;
+        font-weight: 600;
+    }
+
+    #current-class span {
+        position: absolute;
+        display: block;
+    }
+
+    #current-class span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--c));
+        animation: animate1 1s linear infinite;
+    }
+
+    @keyframes animate1 {
+        0% {
+            left: -100%;
+        }
+
+        50%,
+        100% {
+            left: 100%;
+        }
+    }
+
+    #current-class span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, var(--c));
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+
+    }
+
+    @keyframes animate2 {
+        0% {
+            top: -100%;
+        }
+
+        50%,
+        100% {
+            top: 100%;
+        }
+    }
+
+    #current-class span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, var(--c));
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animate3 {
+        0% {
+            right: -100%;
+        }
+
+        50%,
+        100% {
+            right: 100%;
+        }
+    }
+
+    #current-class span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, var(--c));
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+    }
+
+    @keyframes animate4 {
+        0% {
+            bottom: -100%;
+        }
+
+        50%,
+        100% {
+            bottom: 100%;
+        }
+    }
+
+    /* -+-+-+-+-+-+-+-+-+-+-Footer -+-+-+-+-+-+-+-+-+-+-*/
+    <%- include('nbf-1-css'); -%>
+       </style>
+    <link rel="stylesheet" type="text/css" href="css">
+</head>
+
+<body>
+    <%- include('navbar'); -%>
+    <div class="container">
+        <div class="front-page">
+            <div class="dark">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <span class="month-picker" id="month-picker">February</span>
+                        <div class="year-picker">
+                            <span class="year-change" id="prev-year">
+                                < </span> <span id="year">2021
+                            </span>
+                            <span class="year-change" id="next-year"> > </span>
+                        </div>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-week-day">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="calendar-days"></div>
+                    </div>
+                    <div class="calendar-footer"></div>
+                    <div class="month-list"></div>
+                </div>
+                <div id="current-class"><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Hello world!!!</div>
+            </div>
+            <div class="img">
+                <div>
+                    <img src="https://user-images.githubusercontent.com/77490864/133639095-77825c28-6c07-40dc-8200-dca52f524b31.jpg" alt="online claases" />
+                </div>
+            </div>
+        </div>
+    </div>
+   <%- include('footer'); -%>
+   <%- include('home_js'); -%>
