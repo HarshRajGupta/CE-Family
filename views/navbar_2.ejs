@@ -1,0 +1,51 @@
+<div class="nav-bar">
+    <div class="form">
+        <img src="https://user-images.githubusercontent.com/77490864/133586831-899fc6c3-b507-4434-8496-525b638975cb.png"
+            alt="" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <% if(pg==="home" ) { %>
+            <a href="register">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                REGISTER
+            </a>
+            <div></div>
+            <a href="login">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                LOGIN
+            </a>
+            <% } else {if (pg==="l" ) { %>
+                <a href="register">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    REGISTER
+                </a>
+                <% } else if (pg==="lo" || pg==="r" ) { %>
+                    <a href="login">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        login
+                    </a>
+                    <% } %>
+                        <div></div>
+                        <a href="/">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            HOME
+                        </a>
+                        <% } %>
+    </div>
+</div>

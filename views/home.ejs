@@ -1,0 +1,48 @@
+<%- include('home_head') -%>
+<body>
+    <%- include('navbar') -%>
+    <div class="container">
+        <div class="front-page">
+            <div class="dark">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <span class="month-picker" id="month-picker">February</span>
+                        <div class="year-picker">
+                            <span class="year-change" id="prev-year">
+                            </span> <span id="year">2021
+                            </span>
+                            <span class="year-change" id="next-year"> </span>
+                        </div>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-week-day">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="calendar-days"></div>
+                    </div>
+                    <div class="calendar-footer"></div>
+                    <div class="month-list"></div>
+                </div>
+                <div id="current-class"><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Hello world!!!
+                </div>
+            </div>
+            <div class="img">
+                <div>
+                    <img src="https://user-images.githubusercontent.com/77490864/133639095-77825c28-6c07-40dc-8200-dca52f524b31.jpg"
+                        alt="online claases" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('footer') -%>
+    <%- include('home_js') -%>

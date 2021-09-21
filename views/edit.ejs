@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+      html,
+      body {
+        width: 100%;
+        font-family: cursive;
+        background-color: #08d9d6;
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+     
+      /* +++++++++++++++++EDIT+++++++++++++++ */
+      .login-pg {
+        display: grid;
+        width: calc(2 * 350px);
+        height: max-content;
+        background: #141929;
+        margin: 20vh auto;
+        margin-bottom: 40vh;
+        padding: 2rem;
+        border-radius: 25px;
+        text-align: center;
+        grid-gap: 1rem;
+      }
+
+      .box {
+        display: grid;
+        color: #ff2e63;
+        border: 2px solid #ff2e63;
+        border-radius: 20px;
+        padding: 3rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+      .form-p {
+        display: grid;
+        height: max-content;
+        grid-template-columns: auto auto;
+        grid-gap: 4rem;
+        margin-top: 3rem;
+        margin: 2rem auto;
+        text-align: center;
+      }
+
+      .form-p label,
+      .upload label {
+        color: #eaeaea;
+        font-size: 18px;
+      }
+
+      .box input:focus {
+        color: #ff2e63;
+      }
+      .box input {
+        width: 210px;
+        height: 27px;
+        margin-bottom: 0;
+        border-radius: 10px;
+        text-align: center;
+      }
+      textarea {
+        width: 550px;
+        min-height: 150px;
+        resize: vertical;
+        margin: 1rem auto;
+        border-radius: 12px;
+      }
+      input [type="file"] {
+        content: "Photo";
+        margin-left: 4rem;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .box img {
+        margin: 2rem auto;
+        width: 150px;
+        animation: rotate 10s linear infinite;
+      }
+      .button span {
+        position: relative;
+        display: inline-flex;
+        width: 180px;
+        height: 55px;
+        margin: 0;
+        perspective: 1000px;
+        text-align: center;
+      }
+      .useless {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+      }
+      .button span button {
+        font-size: 19px;
+        letter-spacing: 1px;
+        transform-style: preserve-3d;
+        transform: translateZ(-25px);
+        transition: transform 0.25s;
+        font-family: "Montserrat", sans-serif;
+        background: none;
+        border: none;
+      }
+      .button span button:before,
+      .button span button:after {
+        position: absolute;
+        content: "SUBMIT";
+        height: 55px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .button span button:before {
+        color: #fff;
+        background: #000;
+        transform: rotateY(0deg) translateZ(25px);
+      }
+      .button span button:after {
+        color: #000;
+        background: #ff2e63;
+        transform: rotateX(90deg) translateZ(25px);
+      }
+      .button span button:hover {
+        transform: translateZ(-25px) rotateX(-90deg);
+      }
+      
+    </style>
+    <title>Notice Board</title>
+    <link
+      rel="icon"
+      href="https://user-images.githubusercontent.com/85221003/133185970-6a6edf5b-9020-496e-aea8-4ec464135855.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <%- include('navbar') -%>
+    <div class="login-pg">
+      <div class="box">
+        Edit Notice Board
+        <form method="POST" action="edit-notice">
+          <div class="form-p">
+            <div class="subbox">
+              <label for="hd">SUBJECT</label>
+              <input
+                type="hd"
+                id="hd"
+                name="hd"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="subbox">
+              <label for="photo">Upload picture</label>
+              <input type="file" />
+            </div>
+          </div>
+          <div>
+            <label for="bd">BODY</label>
+            <textarea id="bd" name="bd" placeholder="Description" required>
+            </textarea>
+          </div>
+          <div class="button">
+            <span>
+              <button value="notice" name="button"></button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <%- include('footer') -%>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<div class="nav-bar">
+    <div class="form">
+        <img src="https://user-images.githubusercontent.com/77490864/133586831-899fc6c3-b507-4434-8496-525b638975cb.png"
+            alt="" />
+        <% if(pg==="home" ) { %>
+            <a href="update">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Edit
+            </a>
+            <% } else { %>
+                <a href="home">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    HOME
+                </a>
+                <% } if (pg==="tt" ) { %>
+                    <a href="to-do-list">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        To do list
+                    </a>
+                    <% } else if(pg==="list" ){ %>
+                        <a href="edit-list">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Edit list
+                        </a>
+                        <% } else { %>
+                            <a href="time-table">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Time Table
+                            </a>
+                            <% } if(pg==="n" ) { %>
+                                <a href="edit-notice">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Edit
+                                </a>
+                                <% } else { %>
+                                    <a href="notice">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        NOTICE
+                                    </a>
+                                    <% } %>
+                                        <a href="friends">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Friends
+                                        </a>
+                                        <div></div>
+                                        <a href="logout">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Logout
+                                        </a>
+    </div>
+</div>

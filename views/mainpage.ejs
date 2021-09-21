@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <%- include('navbar_footer_2') -%>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WELCOME</title>
+    <style>
+        :root {
+            --btn: #ff2e63;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            background-color: #08d9d6;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        button a {
+            text-decoration: none;
+            color: #03e9f4;
+        }
+
+        .btn {
+            width: 100%;
+            display: grid;
+            position: fixed;
+            bottom: 35vh;
+        }
+
+        .btn a {
+            position: absolute;
+            background: linear-gradient(to left, #383a3d, #222831, #252a34);
+            display: inline-block;
+            padding: 16px;
+            border-radius: 25px;
+            color: var(--btn);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 4px;
+            overflow: hidden;
+            height: max-content;
+            transform: translateX(0);
+            width: 10vw;
+            margin-left: 45vw;
+        }
+
+        .btn a:hover {
+            background: var(--btn);
+            color: #050801;
+            box-shadow: 0 0 5px var(--btn),
+                0 0 25px var(--btn),
+                0 0 50px var(--btn),
+                0 0 200px var(--btn);
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        }
+
+        .btn a span {
+            position: absolute;
+            display: block;
+        }
+
+        .btn span:nth-child(1) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--btn));
+            animation: animate1 1s linear infinite;
+        }
+
+        @keyframes animate1 {
+            0% {
+                left: -100%;
+            }
+
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+
+        .btn a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, var(--btn));
+            animation: animate2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+
+        @keyframes animate2 {
+            0% {
+                top: -100%;
+            }
+
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+
+        .btn a span:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, var(--btn));
+            animation: animate3 1s linear infinite;
+            animation-delay: 0.50s;
+        }
+
+        @keyframes animate3 {
+            0% {
+                right: -100%;
+            }
+
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+
+        .btn a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, var(--btn));
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes animate4 {
+            0% {
+                bottom: -100%;
+            }
+
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+
+        .container {
+            margin: 100px auto;
+            display: flex;
+            overflow: hidden;
+            justify-content: space-around;
+            height: max-content;
+
+        }
+
+        @keyframes rotate {
+            0% {
+                opacity: 1;
+            }
+
+            10% {
+                opacity: 0;
+            }
+
+            90% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .container img {
+            position: absolute;
+            width: 80%;
+            top: 20vh;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+
+        .container img:nth-child(1) {
+            animation: rotate 30s linear infinite;
+            animation-delay: 0s;
+            display: grid;
+
+        }
+
+        .container img:nth-child(2) {
+            animation: rotate 30s linear infinite;
+            animation-delay: -6s;
+            display: grid;
+        }
+
+        .container img:nth-child(3) {
+            animation: rotate 30s linear infinite;
+            animation-delay: -12s;
+            display: grid;
+        }
+
+        .container img:nth-child(4) {
+            animation: rotate 30s linear infinite;
+            animation-delay: -18s;
+            display: grid;
+        }
+
+        .container img:nth-child(5) {
+            animation: rotate 30s linear infinite;
+            animation-delay: -24s;
+            display: grid;
+        }
+
+        /* -+-+-+-+-+-+-+-+-+-+-Footer -+-+-+-+-+-+-+-+-+-+-*/
+    </style>
+</head>
+
+<body>
+    <%- include('navbar_2') -%>
+    <div class="container">
+        <img src="https://user-images.githubusercontent.com/77490864/133792060-0ab57b64-574e-4b8a-aa85-2cf7cbfd7e88.png"
+            alt="">
+        <img src="https://user-images.githubusercontent.com/77490864/133873356-e29da4a7-b59b-4512-a68a-27c6a12a225c.png"
+            alt="">
+        <img src="https://user-images.githubusercontent.com/77490864/133792279-1c047035-acf1-4c68-9809-3694effa6b25.png"
+            alt="">
+        <img src="https://user-images.githubusercontent.com/77490864/133792352-1f75c27c-f369-4722-a9fd-6ba7605b8b68.png"
+            alt="">
+        <img src="https://user-images.githubusercontent.com/77490864/133792406-601d0495-7597-4c4b-8cbc-7df66117c558.png"
+            alt="">
+    </div>
+    <div class="btn">
+        <a href="friends">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Friends
+        </a>
+    </div>
+    <%- include('footer_2') -%>
+</body>
+</html>

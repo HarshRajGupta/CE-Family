@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style>
+        html,
+        body {
+            /* width: 100vw; */
+            font-family: cursive;
+            background-color: #08d9d6;
+            padding: 0;
+            width: 100%;
+            margin: 0;
+            display: grid;
+        }
+
+        /* -+-+-+-+-+-+-+-+-+-+-Page : 2 >> Time Table-+-+-+-+-+-+-+-+-+-+-*/
+
+        .time-table {
+            background: #141929;
+            border-radius: 25px;
+            display: grid;
+            text-align: center;
+            grid-gap: 1rem;
+            padding: 1rem;
+            width: max-content;
+            height: max-content;
+            margin: 15vh auto;
+            margin-bottom: 35vh;
+        }
+
+        .sem {
+            width: 100%;
+            text-align: center;
+            font-size: 22.5px;
+            font-family: cursive;
+            color: #ff2e63;
+            font-weight: 600;
+        }
+
+        .week-days {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            color: aliceblue;
+        }
+
+        .sub,
+        .break,
+        .day,
+        .time {
+            justify-content: space-around;
+            padding: 1.7vh;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+                sans-serif;
+            width: 4vw;
+        }
+
+        .day,
+        .time {
+            opacity: 0.6;
+        }
+
+        .time {
+            width: 5vw;
+        }
+
+        .day {
+            padding-bottom: 0vh;
+        }
+
+        .sub:hover {
+            color: #ff2e63;
+            background-color: #5bff77;
+            border-radius: 100%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css">
+    <title>CE | TIMETABLE</title>
+</head>

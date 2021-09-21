@@ -1,0 +1,21 @@
+<%- include("notice_head") -%>
+
+    <body>
+        <%- include('navbar') -%>
+            <div class="time-table">
+                <div class="sem">To Do List</div>
+                <div class="box">
+                    <% for ( var i=task.length-1; i>=0; i--) { if (task[i].body > 0){%>
+                        <li class="note">
+                            <%= task[i].head %>
+                                <div class="h">
+                                    <%= task[i].body %> days left
+                                </div>
+                        </li>
+                        <% } }%>
+                </div>
+            </div>
+            <%- include('footer'); -%>
+    </body>
+
+    </html>
