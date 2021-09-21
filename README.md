@@ -1,5 +1,11 @@
 # KAIZEN
 
+Technologies used :
+npm :express, body-parser, ejs, cookie-parser, mongoose ,express
+Front end  - html5+css3+js+react
+
+Backend  - node js +(express+ejs) + mongodb + (mongoose)
+
 DAY - 1
 
 Snapshots
@@ -116,6 +122,9 @@ age
 
 # Notice board edit page
 
-![Web capture_21-9-2021_234920_ce-friends herokuapp com](https://user-images.githubusercontent.com/77490864/134226289-a5f6ecb5-331b-4255-912d-b3807832c4f9.jpeg)
+![Web capture_21-9-2021_235159_ce-friends herokuapp com](https://user-images.githubusercontent.com/77490864/134226709-cbf93d06-aa68-4ee4-a4d4-6534f0f05aa0.jpeg)
+
+
+
 
 
