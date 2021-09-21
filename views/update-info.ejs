@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css" />
+    <title>CE || Edit info</title>
+    <%- include("update")-%>
+        <link rel="icon"
+            href="https://user-images.githubusercontent.com/85221003/133185970-6a6edf5b-9020-496e-aea8-4ec464135855.png"
+            type="image/x-icon" />
+</head>
+
+<body>
+    <%- include("navbar") -%>
+        <div class="login-pg">
+            <div class="box">
+                Edit Info
+                <form method="POST" action="update">
+                    <div class="form">
+                        <div class="subbox">
+                            <label for="name">Name</label>
+                            <input type="fullname" id="fullname" name="fullname" placeholder="Full Name" required />
+                        </div>
+                        <div class="subbox">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required />
+                        </div>
+                        <div class="subbox">
+                            <label for="username">Username</label>
+                            <input type="username" id="username" name="username" placeholder="Enter Username"
+                                required />
+                        </div>
+                        <div class="subbox">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Password" required />
+                        </div>
+                    </div>
+                    <label for="info">Description</label>
+                    <textarea id="info" name="info" placeholder="Describe yourself" required>
+                    </textarea>
+
+                    <div class="upload">
+                        <label for="photo">Upload picture</label>
+                        <input type="file" />
+                    </div>
+                    <div class="button">
+                        <button value="notice" name="button"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <%- include("footer") -%>
+</body>
+
+</html>
