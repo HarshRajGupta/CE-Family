@@ -90,3 +90,32 @@ Made the main page for directing to the login page .
 
 Some animations made using CSS
 
+DAY - 10 
+
+>>For visitors outside our branch can visit, they can visit by using the username as "Master Key" and no password will be required in their case.
+
+>>For the members inside our branch , they can have access by first registering their details and having username "b5200XX" (ie their college id) followed by setting        their password respectively.
+>>The details filled can later be edited also 
+
+   #Edit info Page
+   
+   ![Web capture_21-9-2021_234124_ce-friends herokuapp com](https://user-images.githubusercontent.com/77490864/134225066-c5e8c7a4-7d8c-42b7-abc9-3d21365be1cd.jpeg)
+age 
+
+>>Their is a to do list where our class representative(+developer "b5200") only will have the permission to edit the list and update it .There daywise the time gets updated .
+
+#To do list
+
+![Web capture_21-9-2021_234759_ce-friends herokuapp com](https://user-images.githubusercontent.com/77490864/134225783-a17765b9-a7c0-4cf1-90f3-e57dcb3d842d.jpeg)
+
+#Edit to do list
+
+![Web capture_21-9-2021_234920_ce-friends herokuapp com](https://user-images.githubusercontent.com/77490864/134225975-b15843a2-f0de-4095-8a37-f907dd433b41.jpeg)
+
+>> The notice board information also can be updated by the class representative only.
+
+# Notice board edit page
+
+![Web capture_21-9-2021_234920_ce-friends herokuapp com](https://user-images.githubusercontent.com/77490864/134226289-a5f6ecb5-331b-4255-912d-b3807832c4f9.jpeg)
+
+
