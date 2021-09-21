@@ -8,6 +8,8 @@
 
 >>Npm modules - express, body-parser, ejs, cookie-parser, fs and mongoose
 
+>> Time spent: 10 days
+
 DAY - 1
 
 Snapshots
