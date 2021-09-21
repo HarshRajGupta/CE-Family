@@ -1,10 +1,12 @@
 # KAIZEN
 
-Technologies used :
-npm :express, body-parser, ejs, cookie-parser, mongoose ,express
-Front end  - html5+css3+js+react
+#Technologies used
 
-Backend  - node js +(express+ejs) + mongodb + (mongoose)
+>>Front end  - html5, css3, javascript and react js (framework)
+
+>>Backend - Node js and MongoDb
+
+>>Npm modules - express, body-parser, ejs, cookie-parser, fs and mongoose
 
 DAY - 1
 
