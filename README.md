@@ -14,28 +14,39 @@
 
 >>             Features
 
->> 1. Navigation
+>> 1. Logical and easy to use Navigation
 
 >> Nav-bar - default route ![image](https://user-images.githubusercontent.com/85221003/134266802-904b1fe5-3355-4c30-9567-da9670f1f3f6.png)
 
+
 >> Nav-bar - Login Page ![image](https://user-images.githubusercontent.com/85221003/134266977-b763554b-22bf-4b0a-9b08-b7e0931ae44e.png)
+
 
 >> Nav-Bar Register Page ![image](https://user-images.githubusercontent.com/85221003/134267091-3c831f99-87d1-4c80-affe-f2619cfe3c4d.png)
 
+
 >> Nav-Bar Logout ![image](https://user-images.githubusercontent.com/85221003/134267199-dafeb411-a6f9-47d0-9239-17e9ef7ba757.png)
+
+
 
 
 >> Nav-Bar Home Page ![image](https://user-images.githubusercontent.com/85221003/134267290-7aedf0ee-b784-4cc8-8a75-40b493780c0f.png)
 Edit will redirect to (self) profile-Editing page
 
+
 >> Nav-Bar Time-Table ![image](https://user-images.githubusercontent.com/85221003/134267449-65f99e5b-ae0e-4441-9649-ad901d6d310f.png)
 To-Do-List is here 😁😁😁😁😁😁😁
+
 
 >> Nav-Bar To-Do-List ![image](https://user-images.githubusercontent.com/85221003/134267625-f4cbaf9f-34f2-4673-b511-12490a132ef5.png)
 From Here You Can Edit the To-Do List (only CRs can 😁😁)
 
+
 >> Nav-Bar Notice Board ![image](https://user-images.githubusercontent.com/85221003/134267907-b55432d3-eb1e-48ad-8713-03081f89e4c9.png)
 Editing option for Notice Board is here (But only CRs can access it 😁😁)
+
+
+
 
 
 
