@@ -57,7 +57,8 @@ Editing option for Notice Board is here (But only CRs can access it 😁😁)
 
 >> 3. Speacial Features
 
->> Currten Class button ![image](https://user-images.githubusercontent.com/85221003/134268760-4804cae8-648b-4d7c-8f0e-121679065972.png)
+>> Currten Class button 
+![image](https://user-images.githubusercontent.com/85221003/134268760-4804cae8-648b-4d7c-8f0e-121679065972.png)
 It will show the current class and will redirect to current class meet link (only if the meet link is available)
 
 
