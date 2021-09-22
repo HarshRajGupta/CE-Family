@@ -43,18 +43,18 @@ From Here You Can Edit the To-Do List (only CRs can 😁😁)<br>
 
 
 >> Nav-Bar Notice Board ![image](https://user-images.githubusercontent.com/85221003/134267907-b55432d3-eb1e-48ad-8713-03081f89e4c9.png)
-Editing option for Notice Board is here (But only CRs can access it 😁😁)<br><br><br>
+Editing option for Notice Board is here (But only CRs can access it 😁😁)
 
-
+<br><br><br>
 >> 2. Security<br><br>
 
 >> 2.1 If you have not logined then...every page (namely Home, Time-Table, Notice and To-Do-List) will redirect to login Page<br>
 
 >> 2.2 If you have already logined then...You don't need to login untill you logout<br>
 
->> 2.3 Registration Form will accpect only Class User-ids<br><br><br>
+>> 2.3 Registration Form will accpect only Class User-ids
 
-
+<br><br><br>
 >> 3. Speacial Features <br><br>
 
 >> Currten Class button <br>
