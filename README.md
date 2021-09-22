@@ -10,59 +10,59 @@
 
 >> Time spent: 10 days
 
-
+<br><br><br><br><br>
 
 >>             Features
+<br><br><br>
+>> 1. Logical and easy to use Navigation<br><br>
 
->> 1. Logical and easy to use Navigation
-
->> Nav-bar - default route ![image](https://user-images.githubusercontent.com/85221003/134266802-904b1fe5-3355-4c30-9567-da9670f1f3f6.png)
-
-
->> Nav-bar - Login Page ![image](https://user-images.githubusercontent.com/85221003/134266977-b763554b-22bf-4b0a-9b08-b7e0931ae44e.png)
+>> Nav-bar - default route ![image](https://user-images.githubusercontent.com/85221003/134266802-904b1fe5-3355-4c30-9567-da9670f1f3f6.png) <br>
 
 
->> Nav-Bar Register Page ![image](https://user-images.githubusercontent.com/85221003/134267091-3c831f99-87d1-4c80-affe-f2619cfe3c4d.png)
+>> Nav-bar - Login Page ![image](https://user-images.githubusercontent.com/85221003/134266977-b763554b-22bf-4b0a-9b08-b7e0931ae44e.png) <br>
 
 
->> Nav-Bar Logout ![image](https://user-images.githubusercontent.com/85221003/134267199-dafeb411-a6f9-47d0-9239-17e9ef7ba757.png)
+>> Nav-Bar Register Page ![image](https://user-images.githubusercontent.com/85221003/134267091-3c831f99-87d1-4c80-affe-f2619cfe3c4d.png) <br>
+
+
+>> Nav-Bar Logout ![image](https://user-images.githubusercontent.com/85221003/134267199-dafeb411-a6f9-47d0-9239-17e9ef7ba757.png) <br><br>
 
 
 
 
 >> Nav-Bar Home Page ![image](https://user-images.githubusercontent.com/85221003/134267290-7aedf0ee-b784-4cc8-8a75-40b493780c0f.png)
-Edit will redirect to (self) profile-Editing page
+Edit will redirect to (self) profile-Editing page <br>
 
 
 >> Nav-Bar Time-Table ![image](https://user-images.githubusercontent.com/85221003/134267449-65f99e5b-ae0e-4441-9649-ad901d6d310f.png)
-To-Do-List is here 😁😁😁😁😁😁😁
+To-Do-List is here 😁😁😁😁😁😁😁<br>
 
 
 >> Nav-Bar To-Do-List ![image](https://user-images.githubusercontent.com/85221003/134267625-f4cbaf9f-34f2-4673-b511-12490a132ef5.png)
-From Here You Can Edit the To-Do List (only CRs can 😁😁)
+From Here You Can Edit the To-Do List (only CRs can 😁😁)<br>
 
 
 >> Nav-Bar Notice Board ![image](https://user-images.githubusercontent.com/85221003/134267907-b55432d3-eb1e-48ad-8713-03081f89e4c9.png)
-Editing option for Notice Board is here (But only CRs can access it 😁😁)
+Editing option for Notice Board is here (But only CRs can access it 😁😁)<br><br><br>
 
 
->> 2. Security
+>> 2. Security<br><br>
 
->> 2.1 If you have not logined then...every page (namely Home, Time-Table, Notice and To-Do-List) will redirect to login Page
+>> 2.1 If you have not logined then...every page (namely Home, Time-Table, Notice and To-Do-List) will redirect to login Page<br>
 
->> 2.2 If you have already logined then...You don't need to login untill you logout
+>> 2.2 If you have already logined then...You don't need to login untill you logout<br>
 
->> 2.3 Registration Form will accpect only Class User-ids
+>> 2.3 Registration Form will accpect only Class User-ids<br><br><br>
 
 
->> 3. Speacial Features
+>> 3. Speacial Features <br><br>
 
 >> Currten Class button <br>
 ![image](https://user-images.githubusercontent.com/85221003/134268760-4804cae8-648b-4d7c-8f0e-121679065972.png)<br>
 It will show the current class and will redirect to current class meet link (only if the meet link is available)
 
 
-
+<br><br><br><br><br><br>
 DAY - 1
 
 Snapshots
@@ -79,13 +79,15 @@ Home page
 
 >> We have added some animations .
 
+<br><br>
+
 Time Table
 
 ![Time Table](https://user-images.githubusercontent.com/77490864/132987026-c536d064-ae8b-4544-a11a-955228eb5d57.jpeg)
 
 >>It points us the live class.
 
-
+<br><br><br><br>
 
 DAY - 2
 
@@ -111,7 +113,7 @@ Notice Board
 
 >> Have used linear gradient and webkit for some box shadow effects.  
 
-
+<br><br><br><br>
 DAY - 3
 
 Snapshots
@@ -144,7 +146,7 @@ Improvements in previously done pages  : Used grid layout in the student list pa
 
 ![Web capture_14-9-2021_232535_cranky-blackwell-89b44a netlify app](https://user-images.githubusercontent.com/77490864/133309122-2be160f5-ed45-41e5-a573-19ec70d25d3d.jpeg)
 
-
+<br><br><br><br>
 DAY - 6
 
 Made the main page for directing to the login page . 
@@ -153,6 +155,7 @@ Made the main page for directing to the login page .
 
 Some animations made using CSS
 
+<br><br><br><br>
 DAY - 10 
 
 >>For visitors outside our branch can visit, they can visit by using the username as "Master Key" and no password will be required in their case.
