@@ -25,9 +25,9 @@
 >> Nav-Bar Register Page ![image](https://user-images.githubusercontent.com/85221003/134267091-3c831f99-87d1-4c80-affe-f2619cfe3c4d.png) <br>
 
 
->> Nav-Bar Logout ![image](https://user-images.githubusercontent.com/85221003/134267199-dafeb411-a6f9-47d0-9239-17e9ef7ba757.png) <br><br>
+>> Nav-Bar Logout ![image](https://user-images.githubusercontent.com/85221003/134267199-dafeb411-a6f9-47d0-9239-17e9ef7ba757.png) 
 
-
+<br><br>
 
 
 >> Nav-Bar Home Page ![image](https://user-images.githubusercontent.com/85221003/134267290-7aedf0ee-b784-4cc8-8a75-40b493780c0f.png)
