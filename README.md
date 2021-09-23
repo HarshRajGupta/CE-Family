@@ -10,7 +10,7 @@
 
 >> Time spent: 10 days
 
->> To run -> "node server.js"
+>> To run type on terminal -> "node server.js"
 
 <br><br><br><br><br>
 
