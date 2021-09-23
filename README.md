@@ -10,6 +10,8 @@
 
 >> Time spent: 10 days
 
+>> To run -> "node server.js"
+
 <br><br><br><br><br>
 
 >>             Features
